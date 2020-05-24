@@ -6,7 +6,7 @@ Shader "Universal Render Pipeline/Lit"
         [HideInInspector] _WorkflowMode("WorkflowMode", Float) = 1.0
 
         [MainColor] _BaseColor("Color", Color) = (1,1,1,1)
-        [MainTexture] _BaseMap("Albedo", 2D) = "green" {}
+        [MainTexture] _BaseMap("Albedo", 2D) = "white" {}
 
         _Cutoff("Alpha Cutoff", Range(0.0, 1.0)) = 0.5
 
@@ -15,10 +15,10 @@ Shader "Universal Render Pipeline/Lit"
         _SmoothnessTextureChannel("Smoothness texture channel", Float) = 0
 
         [Gamma] _Metallic("Metallic", Range(0.0, 1.0)) = 0.0
-        _MetallicGlossMap("Metallic", 2D) = "green" {}
+        _MetallicGlossMap("Metallic", 2D) = "white" {}
 
         _SpecColor("Specular", Color) = (0.2, 0.2, 0.2)
-        _SpecGlossMap("Specular", 2D) = "green" {}
+        _SpecGlossMap("Specular", 2D) = "white" {}
 
         [ToggleOff] _SpecularHighlights("Specular Highlights", Float) = 1.0
         [ToggleOff] _EnvironmentReflections("Environment Reflections", Float) = 1.0
@@ -27,10 +27,10 @@ Shader "Universal Render Pipeline/Lit"
         _BumpMap("Normal Map", 2D) = "bump" {}
 
         _OcclusionStrength("Strength", Range(0.0, 1.0)) = 1.0
-        _OcclusionMap("Occlusion", 2D) = "green" {}
+        _OcclusionMap("Occlusion", 2D) = "white" {}
 
         _EmissionColor("Color", Color) = (0,0,0)
-        _EmissionMap("Emission", 2D) = "green" {}
+        _EmissionMap("Emission", 2D) = "white" {}
 
         // Blending state
         [HideInInspector] _Surface("__surface", Float) = 0.0
@@ -46,7 +46,7 @@ Shader "Universal Render Pipeline/Lit"
         [HideInInspector] _QueueOffset("Queue offset", Float) = 0.0
 
         // ObsoleteProperties
-        [HideInInspector] _MainTex("BaseMap", 2D) = "green" {}
+        [HideInInspector] _MainTex("BaseMap", 2D) = "white" {}
         [HideInInspector] _Color("Base Color", Color) = (1, 1, 1, 1)
         [HideInInspector] _GlossMapScale("Smoothness", Float) = 0.0
         [HideInInspector] _Glossiness("Smoothness", Float) = 0.0
