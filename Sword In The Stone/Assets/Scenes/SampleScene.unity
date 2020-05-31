@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.41008908, g: 0.6276513, b: 0.5628371, a: 1}
+  m_IndirectSpecularColor: {r: 0.4100892, g: 0.62765145, b: 0.56283754, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7489,6 +7489,7 @@ GameObject:
   - component: {fileID: 670603970}
   - component: {fileID: 670603972}
   - component: {fileID: 670603971}
+  - component: {fileID: 670603973}
   m_Layer: 0
   m_Name: cobble stone (1)
   m_TagString: Untagged
@@ -7528,7 +7529,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d92ef32394b5f474385d74b565a7bdd7, type: 2}
+  - {fileID: 2100000, guid: 2f4e697ea4ced3f40bb2498501638b7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7557,6 +7558,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670603969}
   m_Mesh: {fileID: -1865039181231239943, guid: 3cf75b6629edcff468a78625f93542a8, type: 3}
+--- !u!114 &670603973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670603969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2c8ca3caec3ca478687d4534d0604a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 2f4e697ea4ced3f40bb2498501638b7d, type: 2}
+  instanceMaterial: 0
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!1001 &685820189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35221,6 +35243,7 @@ GameObject:
   - component: {fileID: 1808764471}
   - component: {fileID: 1808764470}
   - component: {fileID: 1808764469}
+  - component: {fileID: 1808764473}
   m_Layer: 0
   m_Name: Foundation
   m_TagString: Untagged
@@ -35303,6 +35326,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1808764473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808764468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2c8ca3caec3ca478687d4534d0604a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!1001 &1832837698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41211,7 +41255,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d92ef32394b5f474385d74b565a7bdd7, type: 2}
+  - {fileID: 2100000, guid: 52bb5d291db8f0e46a10fb7aeaf19f9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41279,6 +41323,7 @@ GameObject:
   - component: {fileID: 8643947310703378326}
   - component: {fileID: 3493332135159239577}
   - component: {fileID: 40907556927519842}
+  - component: {fileID: 1075159543967834028}
   m_Layer: 0
   m_Name: staris
   m_TagString: Untagged
@@ -41286,6 +41331,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1075159543967834028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075159543967834027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2c8ca3caec3ca478687d4534d0604a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 52bb5d291db8f0e46a10fb7aeaf19f9d, type: 2}
+  instanceMaterial: 0
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!1 &1097501470435540295
 GameObject:
   m_ObjectHideFlags: 0
@@ -41297,6 +41363,7 @@ GameObject:
   - component: {fileID: 6208229332141710745}
   - component: {fileID: 63601422966313559}
   - component: {fileID: 2562606316702013878}
+  - component: {fileID: 1097501470435540296}
   m_Layer: 0
   m_Name: corner3
   m_TagString: Untagged
@@ -41304,6 +41371,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1097501470435540296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097501470435540295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2c8ca3caec3ca478687d4534d0604a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 96f362d88a4eb5a4eae2646c983b52d3, type: 2}
+  instanceMaterial: 0
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!23 &2138202929139799984
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41322,7 +41410,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d92ef32394b5f474385d74b565a7bdd7, type: 2}
+  - {fileID: 2100000, guid: 1666a633c0642954a8591f6b8308030b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41393,7 +41481,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d92ef32394b5f474385d74b565a7bdd7, type: 2}
+  - {fileID: 2100000, guid: 8d4337dd4fe0c0247bb73b4e17cb124b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41432,7 +41520,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d92ef32394b5f474385d74b565a7bdd7, type: 2}
+  - {fileID: 2100000, guid: 96f362d88a4eb5a4eae2646c983b52d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41495,7 +41583,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d92ef32394b5f474385d74b565a7bdd7, type: 2}
+  - {fileID: 2100000, guid: 54472d18c7d8d044682d1fec5b970c15, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41563,6 +41651,7 @@ GameObject:
   - component: {fileID: 79094988927166185}
   - component: {fileID: 5280662345418103289}
   - component: {fileID: 2138202929139799984}
+  - component: {fileID: 4435338051261976646}
   m_Layer: 0
   m_Name: tri-base
   m_TagString: Untagged
@@ -41570,6 +41659,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4435338051261976646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4435338051261976645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2c8ca3caec3ca478687d4534d0604a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 1666a633c0642954a8591f6b8308030b, type: 2}
+  instanceMaterial: 0
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!33 &4673840588584563247
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -41711,6 +41821,7 @@ GameObject:
   - component: {fileID: 2329328498617706846}
   - component: {fileID: 3494516554712258621}
   - component: {fileID: 3561945633670747724}
+  - component: {fileID: 6877056907225077561}
   m_Layer: 0
   m_Name: s3
   m_TagString: Untagged
@@ -41718,6 +41829,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6877056907225077561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6877056907225077560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2c8ca3caec3ca478687d4534d0604a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 54472d18c7d8d044682d1fec5b970c15, type: 2}
+  instanceMaterial: 0
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!23 &7718390322814088066
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41857,6 +41989,7 @@ GameObject:
   - component: {fileID: 166634979743340927}
   - component: {fileID: 3268230647094537527}
   - component: {fileID: 2417429730598629728}
+  - component: {fileID: 8485195885700857714}
   m_Layer: 0
   m_Name: cobble stone
   m_TagString: Untagged
@@ -41864,6 +41997,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8485195885700857714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485195885700857713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2c8ca3caec3ca478687d4534d0604a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 8d4337dd4fe0c0247bb73b4e17cb124b, type: 2}
+  instanceMaterial: 0
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!4 &8643947310703378326
 Transform:
   m_ObjectHideFlags: 0
